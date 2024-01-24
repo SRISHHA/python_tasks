@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        sessionStorage.setItem("username","caty");
+        const comp={isadmin:true,
+                    email:"add@gmail.com"};
+        sessionStorage.setItem("complex",JSON.stringify(comp));
+        console.log(sessionStorage.getItem("username"));
+        const x=sessionStorage.getItem("complex");
+        console.log(JSON.parse(x));
+    </script>
+</body>
+</html>
