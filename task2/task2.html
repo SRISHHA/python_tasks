@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <script>
+        //creating objects
+    let myobj={
+    name:"srishha",
+    age:23
+    };
+
+    let serobj=JSON.stringify(myobj);
+    localStorage.setItem("myobj1",serobj);
+    let desobj=JSON.parse(localStorage.getItem("myobj1"));
+    console.log(desobj);
+    
+    document.cookie="name=srishha";
+    document.cookie="name1=srishha";
+    console.log(document.cookie);
+        
+    </script> 
+</body>
+
+</html>
