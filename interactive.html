@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TEXT INPUT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+
+    <body>
+        <main>
+            <center>
+                
+                <input type="text" placeholder="Enter Username" id="Input">
+                <br>
+                <br>
+    
+                
+                <br>
+                <br>
+
+                <label for="greet">Choose your greetings:</label>
+                <select name="greet" id="greetings" multiple>
+                <option value="Hello">Hello</option>
+                <option value="Good Morning">Good Morning</option>
+                <option value="Hola">Hola</option>
+                <option value="Bonjour">Bonjour</option>
+               </select>
+
+            
+
+            <br>
+            <br>
+                
+    
+            </center>
+        <center>
+            <button onclick="display()">VIEW TEXT</button>
+            <div id="displaytext">
+        
+            </div>
+        </center>
+        
+        </main>
+        <script>
+            function display(){
+            const textoutput = document.getElementById("Input");
+            const optionsel= document.getElementById("greetings");
+            const text=document.getElementById("displaytext");
+            text.textContent = `You entered: ${textoutput.value} Greetings: ${optionsel.value}`;
+            
+            
+            
+        }
+    
+        </script>  
+        
+
+        
+    </body>
+
+</html>
